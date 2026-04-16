@@ -119,7 +119,7 @@ function CreateCabinForm({ setShowForm }) {
           Cancel
         </Button>
         <Button disabled={isCreating}>
-          {isPending ? "Creating..." : "Create cabin"}
+          {isCreating ? "Creating..." : "Create cabin"}
         </Button>
       </FormRow>
     </Form>
