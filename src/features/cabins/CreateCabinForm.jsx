@@ -158,7 +158,11 @@ function CreateCabinForm({ setShowForm }) {
       </FormRow>
 
       <FormRow>
-        <Button variation="secondary" type="reset">
+        <Button
+          variation="secondary"
+          type="reset"
+          onClick={() => setShowForm(false)}
+        >
           Cancel
         </Button>
         <Button disabled={isCreating}>
