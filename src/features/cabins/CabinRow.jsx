@@ -59,15 +59,15 @@ function CabinRow({ cabin }) {
     id: cabinId,
     name,
     image,
-    max_capacity,
+    maxCapacity,
     regularPrice,
     discount,
   } = cabin;
   return (
     <TableRow role="row">
-      <Img src={image} alt={cabin.name} />
+      <Img src={image} alt={name} />
       <Cabin>{name}</Cabin>
-      <div>Fits up to {max_capacity} guests</div>
+      <div>Fits up to {maxCapacity} guests</div>
       <Price>{formatCurrency(regularPrice)}</Price>
       <Discount>{formatCurrency(discount)} % off</Discount>
       <button onClick={() => mutate(cabinId)} disabled={isDeleting}>
